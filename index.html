@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Documento CSS-->
+    <link rel="stylesheet" href="css/index.css">
+    
+    
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+ 
+    <title>Sua Saúde!</title>
+</head>
+<body>
+
+    <header>
+        <h1>Indice de Massa Corporal</h1>
+    </header>
+
+    
+    <div>
+        
+        <h2>Cálculo IMC</h2>
+        <p>   
+            <strong>IMC</strong> é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.
+        </p> 
+        <p>  
+            O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado.
+        </p> 
+        
+        <h3>Quer descobrir seu IMC?</h3>
+                
+        <p>
+            Insira seu <strong>peso</strong> e sua <strong>altura</strong> nos campos abaixo e compare com os índices da tabela. 
+        </p>
+
+        <p>
+            <strong>Importante:</strong> siga os exemplos e use somente números.
+        </p>
+
+    </div>  
+    
+    <div class="tabelas" >    
+        <h3 class="tabela">Faça seu cadastro abaixo:</h3>
+
+
+        <div id="container-form">
+            <form>
+
+                <div class="container-input">
+                <label for="name"><strong>Nome:</strong></label>
+                <input type="text" id="nome" id="validanome" placeholder="Digite seu nome!">
+                <div id="mensagemName"></div>
+                </div>
+
+                <div class="container-input">
+                <label for="email"><strong>E-mail:</strong></label>
+                <input type="email" id="email" placeholder="Digite seu E-mail!">
+                <div id="mensagemEmail"></div>
+                </div>
+
+                <div class="container-input">
+                <label for="number"><strong>Telefone:</strong></label>
+                <input type="number" id="telefone" placeholder="Digite seu telefone!">
+                <div id="mensagemtelefone"></div>
+                </div>
+
+                <div class="container-input">
+                <label for="number"><strong>CEP:</strong></label>
+                <input type="text" id="cep" placeholder="Digite seu CEP!">
+                <div id="mensagemcep"></div>
+                </div>
+
+                <div class="container-input">
+                <label for="name"><strong>Cidade:</strong></label>
+                <input type="text" id="cidade" placeholder="Digite seu Cidade!">
+                <div id="mensagemcidade"></div>
+                </div>
+
+                <label for="name"><strong>UF:</strong></label>
+                <select name="text" id="uf">
+                    <option selected>Selecione</option>
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>MG</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>
+                </select>              
+            
+            
+                
+                    <h3 class="tabela">Insira seus dados para o Calculo:</h3>
+
+                    <div class="container-input">
+                        <label for="text"><strong>Peso:</strong></label>
+                        <input type="text" id="peso" placeholder="Digite seu peso!">
+                        <div id="mensagempeso"></div>
+                    </div>
+
+                    <div class="container-input">
+                        <label for="text"><strong>Altura:</strong></label>
+                        <input type="te" id="altura" placeholder="Digite sua Altura!">
+                        <div id="mensagemaltura"></div>
+                    </div>
+
+    
+                <div id="container-button">
+                    <button type="submit" id="enviar" id="enviarImc" >Enviar</button>
+                    <button type="reset" id="apagar" >Apagar</button>
+                </div>
+
+            </form>
+            
+        </div>    
+
+    </div>
+    <div id="formulario">
+        <div id="vernome"></div>
+        <div id="veremail"></div>
+        <div id="vertelefone"></div>
+        <div id="vercep"></div>
+        <div id="vercidade"></div>
+        <div id="veruf"></div>
+        <div id="verpeso"></div>
+        <div id="veraltura"></div>
+        <div id="verresultado"></div>
+    </div>    
+            
+
+    <script src="javascript/index.js"></script>
+    
+</body>
+</html>
